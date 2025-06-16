@@ -104,9 +104,10 @@ If you're working with very large files, consider the following optimizations:
 ## Tests
 To ensure the tool works correctly, unit tests are provided. You can run the tests using **pytest**:
 
-    ```bash
-pytest
+```bash
+    pytest
 ```
+
 This will run all the tests defined in the tests/ directory, ensuring that the tool functions as expected.
 
 ## License
