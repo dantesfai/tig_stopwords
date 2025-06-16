@@ -82,7 +82,7 @@ To run the stopword generator on your text files:
 
 ## Configuration
 You can customize the cleaning process and output settings by modifying the config.json file.
-```json
+```
     Example config.json:
 
     json 
