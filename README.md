@@ -53,7 +53,7 @@ To run the stopword generator on your text files:
 ```bash
         python stopword_generator.py data/input.txt -c config.json -o output/stopwords.txt -t 2.5
  ```
- 
+
 **Arguments**:
 
 - data/input.txt: Path to the input file (either .txt or .csv file).
@@ -82,7 +82,7 @@ To run the stopword generator on your text files:
 
 ## Configuration
 You can customize the cleaning process and output settings by modifying the config.json file.
-    ```
+```json
     Example config.json:
 
     json 
@@ -92,7 +92,8 @@ You can customize the cleaning process and output settings by modifying the conf
         "output_filename": "stopwords.txt", // Output file name
         "idf_threshold": 2.5  // Threshold for IDF-based stopword generation
     }
-    ```
+
+```
 
 ## Performance Optimization
 If you're working with very large files, consider the following optimizations:
