@@ -99,6 +99,7 @@ You can customize the cleaning process and output settings by modifying the conf
 If you're working with very large files, consider the following optimizations:
 
 **File Streaming**: If the input files are large, modify the tool to process the file line-by-line or in chunks. This will prevent memory overload and allow the tool to handle large datasets efficiently.
+
 **Parallel Processing**: For large corpora or if the cleaning process is computationally intensive, you can use multiprocessing or concurrent.futures to speed up processing.
 
 ## Tests
