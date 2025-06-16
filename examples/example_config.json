@@ -1,0 +1,6 @@
+{
+    "text_column": "text",            
+    "output_dir": "output",          
+    "output_filename": "stopwords.txt",  
+    "idf_threshold": 2.5             
+}
