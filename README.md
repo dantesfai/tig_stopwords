@@ -48,11 +48,12 @@ Ensure that you have **Python 3.x** installed. You'll also need to install the r
 ## Usage
 ### Command-Line Interface (CLI)
 
-  To run the stopword generator on your text files:
+To run the stopword generator on your text files:
 
-    ```bash
- python stopword_generator.py data/input.txt -c config.json -o output/stopwords.txt -t 2.5
+```bash
+        python stopword_generator.py data/input.txt -c config.json -o output/stopwords.txt -t 2.5
  ```
+ 
 **Arguments**:
 
 - data/input.txt: Path to the input file (either .txt or .csv file).
