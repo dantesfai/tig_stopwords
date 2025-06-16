@@ -25,6 +25,7 @@ Ensure that you have **Python 3.x** installed. You'll also need to install the r
 
    ```bash
    git clone https://github.com/yourusername/stopword-generator.git
+   ```
 
 2. Navigate to the project directory:
 
@@ -36,11 +37,13 @@ Ensure that you have **Python 3.x** installed. You'll also need to install the r
 
     ```bash
     pip install -r requirements.txt
+    ```
 
 4. (Optional) If you want to run tests, you can install pytest:
 
    ```bash
     pip install pytest
+    ```
 
 ## Usage
 ### Command-Line Interface (CLI)
@@ -51,6 +54,7 @@ Ensure that you have **Python 3.x** installed. You'll also need to install the r
  python stopword_generator.py data/input.txt -c config.json -o output/stopwords.txt -t 2.5
  ```
 **Arguments**:
+
 - data/input.txt: Path to the input file (either .txt or .csv file).
 - -c config.json: Path to the configuration file (default is config.json).
 - -o output/stopwords.txt: Path where the stopwords file will be saved (default is stopwords.txt).
@@ -59,20 +63,20 @@ Ensure that you have **Python 3.x** installed. You'll also need to install the r
 ### Programmatic Usage
    ```python
  
-from stopword_generator import StopwordGenerator
+    from stopword_generator import StopwordGenerator
 
-# Initialize the Stopword Generator
-stopword_gen = StopwordGenerator(corpus_files=["data/input.txt"])
+    # Initialize the Stopword Generator
+    stopword_gen = StopwordGenerator(corpus_files=["data/input.txt"])
 
-# Generate stopwords
-stopwords = stopword_gen.generate_stop_words(threshold=2.5)
+    # Generate stopwords
+    stopwords = stopword_gen.generate_stop_words(threshold=2.5)
 
-# Print the top 10 stopwords
-for word, freq in stopwords[:10]:
-    print(f"{word}: {freq}")
+    # Print the top 10 stopwords
+    for word, freq in stopwords[:10]:
+        print(f"{word}: {freq}")
 
-# Save stopwords to a file
-stopword_gen.save_stop_words(output_file="stopwords.txt", threshold=2.5)
+    # Save stopwords to a file
+    stopword_gen.save_stop_words(output_file="stopwords.txt", threshold=2.5)
 ```
 
 ## Configuration
